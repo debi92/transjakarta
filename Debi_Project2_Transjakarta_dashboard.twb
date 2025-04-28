@@ -1,0 +1,1409 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='cleaned_transjakarta' inline='true' name='federated.1schfk01iwhnpb130bk981sidxvv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cleaned_transjakarta' name='textscan.0pyawai07dopi315uqz070yq6k97'>
+            <connection class='textscan' directory='C:/Users/Debi/Downloads' filename='cleaned_transjakarta.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0pyawai07dopi315uqz070yq6k97' name='cleaned_transjakarta.csv' table='[cleaned_transjakarta#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_ID' separator=','>
+            <column datatype='string' name='transID' ordinal='0' />
+            <column datatype='integer' name='payCardID' ordinal='1' />
+            <column datatype='string' name='payCardBank' ordinal='2' />
+            <column datatype='string' name='payCardName' ordinal='3' />
+            <column datatype='string' name='payCardSex' ordinal='4' />
+            <column datatype='integer' name='payCardBirthDate' ordinal='5' />
+            <column datatype='string' name='corridorID' ordinal='6' />
+            <column datatype='string' name='corridorName' ordinal='7' />
+            <column datatype='real' name='direction' ordinal='8' />
+            <column datatype='string' name='tapInStops' ordinal='9' />
+            <column datatype='string' name='tapInStopsName' ordinal='10' />
+            <column datatype='real' name='tapInStopsLat' ordinal='11' />
+            <column datatype='real' name='tapInStopsLon' ordinal='12' />
+            <column datatype='integer' name='stopStartSeq' ordinal='13' />
+            <column datatype='datetime' name='tapInTime' ordinal='14' />
+            <column datatype='string' name='tapOutStops' ordinal='15' />
+            <column datatype='string' name='tapOutStopsName' ordinal='16' />
+            <column datatype='real' name='tapOutStopsLat' ordinal='17' />
+            <column datatype='real' name='tapOutStopsLon' ordinal='18' />
+            <column datatype='real' name='stopEndSeq' ordinal='19' />
+            <column datatype='datetime' name='tapOutTime' ordinal='20' />
+            <column datatype='real' name='payAmount' ordinal='21' />
+            <column datatype='string' name='tapDay' ordinal='22' />
+            <column datatype='integer' name='payCardAge' ordinal='23' />
+            <column datatype='integer' name='tapInHour' ordinal='24' />
+            <column datatype='integer' name='tapOutHour' ordinal='25' />
+            <column datatype='real' name='travelDuration' ordinal='26' />
+            <column datatype='real' name='distance_km' ordinal='27' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;IDR&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_ID&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[transID]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>transID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payCardID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[payCardID]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>payCardID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payCardBank</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[payCardBank]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>payCardBank</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payCardName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[payCardName]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>payCardName</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payCardSex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[payCardSex]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>payCardSex</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payCardBirthDate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[payCardBirthDate]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>payCardBirthDate</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>corridorID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[corridorID]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>corridorID</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>corridorName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[corridorName]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>corridorName</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>direction</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[direction]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>direction</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tapInStops</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tapInStops]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>tapInStops</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tapInStopsName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tapInStopsName]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>tapInStopsName</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tapInStopsLat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tapInStopsLat]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>tapInStopsLat</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tapInStopsLon</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tapInStopsLon]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>tapInStopsLon</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stopStartSeq</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stopStartSeq]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>stopStartSeq</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tapInTime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[tapInTime]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>tapInTime</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tapOutStops</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tapOutStops]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>tapOutStops</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tapOutStopsName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tapOutStopsName]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>tapOutStopsName</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tapOutStopsLat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tapOutStopsLat]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>tapOutStopsLat</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tapOutStopsLon</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tapOutStopsLon]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>tapOutStopsLon</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stopEndSeq</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[stopEndSeq]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>stopEndSeq</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tapOutTime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[tapOutTime]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>tapOutTime</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payAmount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[payAmount]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>payAmount</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tapDay</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tapDay]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>tapDay</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payCardAge</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[payCardAge]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>payCardAge</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tapInHour</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tapInHour]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>tapInHour</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tapOutHour</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tapOutHour]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>tapOutHour</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>travelDuration</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[travelDuration]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>travelDuration</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distance_km</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[distance_km]</local-name>
+            <parent-name>[cleaned_transjakarta.csv]</parent-name>
+            <remote-alias>distance_km</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='cleaned_transjakarta.csv' datatype='table' name='[__tableau_internal_object_id__].[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]' role='measure' type='quantitative' />
+      <column caption='Corridor ID' datatype='string' name='[corridorID]' role='dimension' type='nominal' />
+      <column caption='Corridor Name' datatype='string' name='[corridorName]' role='dimension' type='nominal' />
+      <column caption='Direction' datatype='real' name='[direction]' role='measure' type='quantitative' />
+      <column caption='Distance Km' datatype='real' name='[distance_km]' role='measure' type='quantitative' />
+      <column caption='Pay Amount' datatype='real' name='[payAmount]' role='measure' type='quantitative' />
+      <column caption='Pay Card Age' datatype='integer' name='[payCardAge]' role='measure' type='quantitative' />
+      <column caption='Pay Card Bank' datatype='string' name='[payCardBank]' role='dimension' type='nominal' />
+      <column caption='Pay Card Birth Date' datatype='integer' name='[payCardBirthDate]' role='measure' type='quantitative' />
+      <column caption='Pay Card ID' datatype='integer' name='[payCardID]' role='dimension' type='ordinal' />
+      <column caption='Pay Card Name' datatype='string' name='[payCardName]' role='dimension' type='nominal' />
+      <column caption='Pay Card Sex' datatype='string' name='[payCardSex]' role='dimension' type='nominal' />
+      <column caption='Stop End Seq' datatype='real' name='[stopEndSeq]' role='measure' type='quantitative' />
+      <column caption='Stop Start Seq' datatype='integer' name='[stopStartSeq]' role='measure' type='quantitative' />
+      <column caption='Tap Day' datatype='string' name='[tapDay]' role='dimension' type='nominal' />
+      <column caption='Tap In Hour' datatype='integer' name='[tapInHour]' role='measure' type='quantitative' />
+      <column caption='Tap In Stops Lat' datatype='real' name='[tapInStopsLat]' role='measure' type='quantitative' />
+      <column caption='Tap In Stops Lon' datatype='real' name='[tapInStopsLon]' role='measure' type='quantitative' />
+      <column caption='Tap In Stops Name' datatype='string' name='[tapInStopsName]' role='dimension' type='nominal' />
+      <column caption='Tap In Stops' datatype='string' name='[tapInStops]' role='dimension' type='nominal' />
+      <column caption='Tap In Time' datatype='datetime' name='[tapInTime]' role='dimension' type='ordinal' />
+      <column caption='Tap Out Hour' datatype='integer' name='[tapOutHour]' role='measure' type='quantitative' />
+      <column caption='Tap Out Stops Lat' datatype='real' name='[tapOutStopsLat]' role='measure' type='quantitative' />
+      <column caption='Tap Out Stops Lon' datatype='real' name='[tapOutStopsLon]' role='measure' type='quantitative' />
+      <column caption='Tap Out Stops Name' datatype='string' name='[tapOutStopsName]' role='dimension' type='nominal' />
+      <column caption='Tap Out Stops' datatype='string' name='[tapOutStops]' role='dimension' type='nominal' />
+      <column caption='Tap Out Time' datatype='datetime' name='[tapOutTime]' role='dimension' type='ordinal' />
+      <column caption='Trans ID' datatype='string' name='[transID]' role='dimension' type='nominal' />
+      <column caption='Travel Duration' datatype='real' name='[travelDuration]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Debi/AppData/Local/Temp/TableauTemp/#TableauTemp_16iu1qj1n3ykub16kofxa1kw9ehd.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/28/2025 12:46:45 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>transID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[transID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>transID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>30800</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payCardID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[payCardID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payCardID</remote-alias>
+              <ordinal>1</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2496</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payCardBank</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[payCardBank]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payCardBank</remote-alias>
+              <ordinal>2</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payCardName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[payCardName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payCardName</remote-alias>
+              <ordinal>3</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2490</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payCardSex</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[payCardSex]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payCardSex</remote-alias>
+              <ordinal>4</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payCardBirthDate</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[payCardBirthDate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payCardBirthDate</remote-alias>
+              <ordinal>5</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>85</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>corridorID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[corridorID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>corridorID</remote-alias>
+              <ordinal>6</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>284</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>corridorName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[corridorName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>corridorName</remote-alias>
+              <ordinal>7</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>273</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>direction</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[direction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>direction</remote-alias>
+              <ordinal>8</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tapInStops</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tapInStops]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tapInStops</remote-alias>
+              <ordinal>9</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2699</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tapInStopsName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tapInStopsName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tapInStopsName</remote-alias>
+              <ordinal>10</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2699</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tapInStopsLat</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tapInStopsLat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tapInStopsLat</remote-alias>
+              <ordinal>11</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2679</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tapInStopsLon</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tapInStopsLon]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tapInStopsLon</remote-alias>
+              <ordinal>12</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2628</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stopStartSeq</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[stopStartSeq]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stopStartSeq</remote-alias>
+              <ordinal>13</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>91</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tapInTime</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[tapInTime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tapInTime</remote-alias>
+              <ordinal>14</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>30800</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tapOutStops</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tapOutStops]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tapOutStops</remote-alias>
+              <ordinal>15</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2618</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tapOutStopsName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tapOutStopsName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tapOutStopsName</remote-alias>
+              <ordinal>16</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2618</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tapOutStopsLat</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tapOutStopsLat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tapOutStopsLat</remote-alias>
+              <ordinal>17</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2599</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tapOutStopsLon</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tapOutStopsLon]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tapOutStopsLon</remote-alias>
+              <ordinal>18</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2567</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stopEndSeq</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[stopEndSeq]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stopEndSeq</remote-alias>
+              <ordinal>19</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>86</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tapOutTime</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[tapOutTime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tapOutTime</remote-alias>
+              <ordinal>20</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>29333</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payAmount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[payAmount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payAmount</remote-alias>
+              <ordinal>21</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tapDay</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tapDay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tapDay</remote-alias>
+              <ordinal>22</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payCardAge</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[payCardAge]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payCardAge</remote-alias>
+              <ordinal>23</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>85</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tapInHour</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tapInHour]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tapInHour</remote-alias>
+              <ordinal>24</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tapOutHour</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tapOutHour]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tapOutHour</remote-alias>
+              <ordinal>25</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>travelDuration</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[travelDuration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>travelDuration</remote-alias>
+              <ordinal>26</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7637</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>distance_km</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[distance_km]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>distance_km</remote-alias>
+              <ordinal>27</ordinal>
+              <family>cleaned_transjakarta.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3838</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Indonesia&quot;' />
+      </semantic-values>
+      <filter class='categorical' column='[corridorName]' filter-group='2'>
+        <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+          <groupfilter direction='DESC' expression='COUNT([tapDay])' function='order' user:ui-marker='order'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[corridorName]' member='&quot;Andara - Stasiun Universitas Pancasila&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Batusari - Grogol&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Bekasi Barat - Blok M&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Bekasi Barat - Kuningan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Bekasi Timur - Cawang&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Bintara - Cipinang Indah&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Bintaro - Blok M&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Bintaro - Fatmawati&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Blok M - Andara&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Blok M - Kota&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Blok M - Pasar Minggu&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Blok M - PGC&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Blok M - Universitas Indonesia&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;BSD - Jelambar&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;BSD Serpong - Fatmawati&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Bulak Ringin - Kampung Rambutan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Bulak Turi - Tanjung Priok&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Cawang UKI - Lubang Buaya&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Cempaka Putih - Pulo Gadung via Kelapa Gading&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Cibubur - Balai Kota&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Cibubur - BKN&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Cibubur - Kuningan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Cibubur Junction - Blok M&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Cilangkap - Cililitan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Ciledug - Tendean&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Cililitan - Condet&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Cililitan - Condet via Kayu Manis&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Cililitan - Dwikora&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Cililitan - Kp. Pulo&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Cilincing - Rorotan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Cinere - Bundaran Senayan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Cinere - Kuningan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Ciputat - CSW&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Ciputat - Kampung Rambutan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Depok - BKN&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Dukuh Atas - Casablanca via Epicentrum Raya&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Dwikora - Penas Kalimalang&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Gondangdia - Balai Kota&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Gondangdia - Senen&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Grogol - Benhil&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Grogol - Meruya via Roxy&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Grogol - Pos Pengumben via Slipi&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Grogol - Srengseng&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Grogol - Tubagus Angke&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Harapan Baru - Pulo Gebang via Rawa Kuning&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Harapan Indah - ASMI&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Harmoni - Jakarta International Stadium&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Jakarta International Stadium - Senen&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Jambore Cibubur - Pasar Rebo&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Jelambar - Juanda&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;JIS - Terminal Muara Angke&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Joglo - Blok M&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Kalibata - Kuningan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Kalideres - Bundaran HI via Veteran&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Kalideres - Gelora Bung Karno&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Kalideres - Puri Kembangan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Kalimalang - Duren Sawit&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Kampung Melayu - Duren Sawit&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Kampung Melayu - Pondok Kelapa&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Kampung Melayu - Pulo Gadung&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Kampung Melayu - Pulo Gebang via BKT&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Kampung Melayu - Ragunan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Kampung Melayu - Tanah Abang&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Kampung Melayu - Tanah Abang via Cikini&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Kampung Rambutan - Bidara Cina&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Kampung Rambutan - Blok M&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Kampung Rambutan - Juanda via Pasar Baru&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Kampung Rambutan - Lebak Bulus&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Kampung Rambutan - Monas&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Kampung Rambutan - Pasar Rebo via Poncol&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Kampung Rambutan - Pinang Ranti&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Kampung Rambutan - Pondok Gede&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Kampung Rambutan - Ragunan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Kampung Rambutan - Tanjung Priok&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Kebayoran Lama - Jelambar&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Kebayoran Lama - Tanah Abang&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Kelapa Gading - Rusun Kemayoran&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Kp. Rambutan - Kalisari&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Kp. Rambutan - Taman Wiladatika&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Lebak Bulus - Andara&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Lebak Bulus - Cipulir&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Lebak Bulus - Pasar Baru&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Lebak Bulus - Pasar Baru via Tomang&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Lebak Bulus - Petukangan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Lebak Bulus - Ragunan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Lenteng Agung - Aseli&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Matraman Baru - Ancol&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Meruya - Blok M&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Monas - Pantai Indah Kapuk&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Palem Semi - Bundaran Senayan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pancoran - Kampung Rambutan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pangkalan Jati - Rawamangun&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pantai Maju - Balai Kota&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pantai Maju - Kota&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pasar Minggu - Ciganjur via KB Ragunan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pasar Minggu - Jagakarsa&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pasar Minggu - Tanah Abang&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pasar Minggu - Velbak&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pelabuhan Kaliadem - Kota&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pesanggrahan - Blok M&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;PGC - Juanda&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;PGC 1 - Ancol&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;PGC 2 - Grogol 2&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;PGC 2 - Tanjung Priok&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pinang Ranti - Bundaran Senayan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pinang Ranti - Kampung Rambutan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pinang Ranti - Pluit&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pinang Ranti - Pramuka&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pinang Ranti - Pulo Gadung&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pluit - Senen&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pondok Kelapa - BKN&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pondok Labu - Blok M&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Poris Plawad - Bundaran Senayan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pulo Gadung - Kota&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pulo Gadung - Monas&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pulo Gadung - Rawa Buaya via Balai Kota&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pulo Gadung 2 - Dukuh Atas 2&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pulo Gadung 2 - Kuningan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pulo Gadung 2 - Tosari&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pulo Gebang - Matraman&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pulo Gebang - Pulo Gadung 2&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pulo Gebang - Pulo Gadung 2 via PIK&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Pulo Gebang - Rorotan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Puri Beta - Dukuh Atas&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Puri Beta - Kuningan (Express)&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Puri Beta - Pancoran Barat&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Puri Beta - Ragunan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Puri Beta 2 - Tendean&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Puri Kembangan - Sentraland Cengkareng&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Ragunan - Blok M via Kemang&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Ragunan - Dukuh Atas 2&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Ragunan - Gelora Bung Karno&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Ragunan - MH Thamrin&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Ragunan - MH Thamrin via Kuningan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Ragunan - MH Thamrin via Semanggi&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Rawa Buaya - Rawa Kompeni&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Rawamangun - Duren Sawit&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Rawamangun - Klender&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Rawamangun - Tanah Merah&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Rempoa - Blok M&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Roxy - Benhil&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Rusun Cakung Barat - Pulo Gadung&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Rusun Cipinang Besar Selatan - Penas Kalimalang&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Rusun Cipinang Muara - Jatinegara&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Rusun Flamboyan - Cengkareng&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Rusun Jati Rawasari - Senen&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Rusun Jatinegara Kaum - Pulo Gadung&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Rusun Kapuk Muara - Penjaringan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Rusun Komarudin - Penggilingan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Rusun Marunda - Rusun Waduk Pluit&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Rusun Marunda - Tanjung Priok&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Rusun Marunda - Terminal Terpadu Pulo Gebang&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Rusun Penjaringan - Penjaringan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Rusun Pesakih - Kalideres&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Rusun Pinus Elok - Rusun Pulo Gebang&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Rusun Pondok Bambu - Walikota Jakarta Timur&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Rusun Rawa Bebek - Bukit Duri&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Rusun Rawa Bebek - Kodamar&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Rusun Rawa Bebek - Penggilingan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Rusun Sindang Koja - Kp. Sawah&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Rusun Tambora - Pluit&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Rusun Waduk Pluit - Penjaringan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;S. Parman - Tanah Abang&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Sarana Jaya - Tebet Eco Park (TEP) - Stasiun Cawang&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Semper - Rorotan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Senen - Blok M&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Senen - Lebak Bulus&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Senen - Pisangan Baru&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Senen - Pulo Gadung&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Senen - Pulo Gadung via Kelapa Gading&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Senen - Tanah Abang&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;St. LRT Pegangsaan Dua - JIS&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Stasiun Manggarai - Blok M&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Stasiun Manggarai - UI&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Stasiun Palmerah - Bundaran Senayan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Stasiun Palmerah - Tosari&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Stasiun Tebet - BNN&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Stasiun Tebet - Karet via Patra Kuningan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Stasiun Tebet - Karet via Underpass&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Summarecon Bekasi - BNN&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Sunter Boulevard Barat - Penjaringan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Taman Kota - Budi Luhur&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Taman Waduk Papanggo - Kota Tua&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Tanah Abang - Blok M&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Tanah Abang - Grogol via Tawakal&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Tanah Abang - Jembatan Lima&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Tanah Abang - Kebayoran Lama&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Tanah Abang - Kebayoran Lama via Pos Pengumben&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Tanah Abang - Kota&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Tanah Abang - Meruya&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Tanah Abang - Stasiun Gondangdia&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Tanjung Priok - Blok M&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Tanjung Priok - Jembatan Item&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Tanjung Priok - PGC 2&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Tanjung Priok - Pluit&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Tanjung Priok - Plumpang&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Tanjung Priok - Senen via Taman BMW&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Tanjung Priok - Sukapura&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Tanjung Priok - Tanah Merdeka&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Term. Pulo Gadung - Lampiri&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Term. Rawamangun - Term. Manggarai&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Term. Tj. Priok - Pegangsaan II IGI&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Terminal Kalideres - Terminal Muara Angke&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Terminal Kampung Melayu - Kapin Raya&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Terminal Kampung Melayu - Terminal Klender&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Terminal Rawamangun - Cipinang Muara&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Terminal Tanah Merah - Pulo Gadung&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Terminal Tanjung Priok - Ancol Barat&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Tongtek - Tebet Eco Park (TEP) - Cililitan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;TU Gas - Bundaran Senayan&quot;' />
+              <groupfilter function='member' level='[corridorName]' member='&quot;Universitas Indonesia - Lebak Bulus&quot;' />
+            </groupfilter>
+          </groupfilter>
+        </groupfilter>
+      </filter>
+      <object-graph>
+        <objects>
+          <object caption='cleaned_transjakarta.csv' id='cleaned_transjakarta.csv_85D9D5A9AA4D4D2495EDEB192D73667F'>
+            <properties context=''>
+              <relation connection='textscan.0pyawai07dopi315uqz070yq6k97' name='cleaned_transjakarta.csv' table='[cleaned_transjakarta#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_ID' separator=','>
+                  <column datatype='string' name='transID' ordinal='0' />
+                  <column datatype='integer' name='payCardID' ordinal='1' />
+                  <column datatype='string' name='payCardBank' ordinal='2' />
+                  <column datatype='string' name='payCardName' ordinal='3' />
+                  <column datatype='string' name='payCardSex' ordinal='4' />
+                  <column datatype='integer' name='payCardBirthDate' ordinal='5' />
+                  <column datatype='string' name='corridorID' ordinal='6' />
+                  <column datatype='string' name='corridorName' ordinal='7' />
+                  <column datatype='real' name='direction' ordinal='8' />
+                  <column datatype='string' name='tapInStops' ordinal='9' />
+                  <column datatype='string' name='tapInStopsName' ordinal='10' />
+                  <column datatype='real' name='tapInStopsLat' ordinal='11' />
+                  <column datatype='real' name='tapInStopsLon' ordinal='12' />
+                  <column datatype='integer' name='stopStartSeq' ordinal='13' />
+                  <column datatype='datetime' name='tapInTime' ordinal='14' />
+                  <column datatype='string' name='tapOutStops' ordinal='15' />
+                  <column datatype='string' name='tapOutStopsName' ordinal='16' />
+                  <column datatype='real' name='tapOutStopsLat' ordinal='17' />
+                  <column datatype='real' name='tapOutStopsLon' ordinal='18' />
+                  <column datatype='real' name='stopEndSeq' ordinal='19' />
+                  <column datatype='datetime' name='tapOutTime' ordinal='20' />
+                  <column datatype='real' name='payAmount' ordinal='21' />
+                  <column datatype='string' name='tapDay' ordinal='22' />
+                  <column datatype='integer' name='payCardAge' ordinal='23' />
+                  <column datatype='integer' name='tapInHour' ordinal='24' />
+                  <column datatype='integer' name='tapOutHour' ordinal='25' />
+                  <column datatype='real' name='travelDuration' ordinal='26' />
+                  <column datatype='real' name='distance_km' ordinal='27' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Pay Card Bank by Average Age'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Pay Card Bank by Average Age</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_transjakarta' name='federated.1schfk01iwhnpb130bk981sidxvv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1schfk01iwhnpb130bk981sidxvv'>
+            <column-instance column='[payCardAge]' derivation='Avg' name='[avg:payCardAge:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[payCardBank]' derivation='None' name='[none:payCardBank:nk]' pivot='key' type='nominal' />
+            <column caption='Pay Card Age' datatype='integer' name='[payCardAge]' role='measure' type='quantitative' />
+            <column caption='Pay Card Bank' datatype='string' name='[payCardBank]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1schfk01iwhnpb130bk981sidxvv].[none:payCardBank:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1schfk01iwhnpb130bk981sidxvv].[avg:payCardAge:qk]</rows>
+        <cols>[federated.1schfk01iwhnpb130bk981sidxvv].[none:payCardBank:nk]</cols>
+      </table>
+      <simple-id uuid='{78222E81-EF19-4B57-8092-8B16409FC43B}' />
+    </worksheet>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E0343D92-B345-42FD-9861-F1B2CC4AFC73}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F6859824-CF40-4100-ACDC-38FA1F7D414F}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Pay Card Bank by Average Age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1schfk01iwhnpb130bk981sidxvv].[none:payCardBank:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1schfk01iwhnpb130bk981sidxvv].[none:payCardBank:nk]</field>
+            <field>[federated.1schfk01iwhnpb130bk981sidxvv].[none:payCardID:ok]</field>
+            <field>[federated.1schfk01iwhnpb130bk981sidxvv].[none:payCardName:nk]</field>
+            <field>[federated.1schfk01iwhnpb130bk981sidxvv].[none:tapDay:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{96450506-AC07-4927-BE26-2B535A3BCF38}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Pay Card Bank by Average Age' width='192'>
+      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
+      +3+xwSVPUafA7QAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
